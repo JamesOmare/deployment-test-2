@@ -8,7 +8,7 @@ class User(db.Model, UserMixin):
 
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(50))
-    password = db.Column(db.String(100))
+    password = db.Column(db.Text)
     expert = db.Column(db.Boolean)
     admin = db.Column(db.Boolean)
 
